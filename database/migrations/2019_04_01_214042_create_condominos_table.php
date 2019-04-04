@@ -18,13 +18,13 @@ class CreateCondominosTable extends Migration
             $table->string('apto', 10);
             $table->string('nome', 140);
             $table->string('email', 140);
-            $table->bigInteger('cpf');
-            $table->bigInteger('rg');
+            $table->string('cpf');
+            $table->string('rg');
             $table->date('data_nascimento');
             $table->enum('sexo', ['Feminino', 'Masculino', 'Outro']);
-            $table->bigInteger('telefone_fixo');
-            $table->bigInteger('celular');
-            $table->integer('vaga_apto');
+            $table->string('telefone_fixo');
+            $table->string('celular');
+            $table->string('vaga_apto');
             $table->timestamps();
         });
     }
