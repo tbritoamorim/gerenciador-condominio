@@ -10,4 +10,14 @@ class Condomino extends Model
     {
         return $this->hasMany('App\Models\Dependente');
     }
+
+    public function reserva()
+    {
+        return $this->hasMany('App\Models\Reserva');
+    }
+
+    public function visitante()
+    {
+        return $this->hasMany('App\Models\Visitante');
+    }
 }
