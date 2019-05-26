@@ -126,7 +126,7 @@ return [
         ],
         [
             'text'  => 'Reservas',
-            'url'   => 'admin/reservas',
+            'url'   => 'admin/reserva',
             'icon'  => 'bookmark', 
         ],  
         'Configurações de Usuário',
