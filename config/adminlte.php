@@ -111,7 +111,7 @@ return [
         'MENU',
         [
             'text'  => 'Condôminos',
-            'url'   => 'admin/condominos',
+            'url'   => 'admin/condominos/index',
             'icon'  => 'building',
         ],
         [
