@@ -28,9 +28,9 @@
         <input type="date" name="data_nascimento">
         <br>
         Sexo:
-        <input type="radio" name="sexo" value="Feminino">
-        <input type="radio" name="sexo" value="Masculino">
-        <input type="radio" name="sexo" value="Outro">
+        <input type="radio" name="sexo" value="Feminino">Feminino
+        <input type="radio" name="sexo" value="Masculino">Masculino
+        <input type="radio" name="sexo" value="Outro">Outro
         <br>
         Telefone Fixo:
         <input type="text" name="telefone_fixo">
@@ -40,5 +40,7 @@
         <br>
         Vaga de Estacionamento:
         <input type="text" name="vaga_apto">
+        <br>
+        <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
 @stop
