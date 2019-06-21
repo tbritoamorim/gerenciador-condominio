@@ -8,6 +8,10 @@
 
 @section('content')
     <p>Lista de Condôminos</p>
+    <form action="{{ action('admin\CondominosController@create') }}" method="post">
+        {{ csrf_field() }}
+        <button type="submit" class="btn btn-primary" style="float:right;"><i class="ion ion-person-add"></i></button>
+    </form>
     <form action="{{ action('admin\CondominosController@search') }}" method="POST">
         {{ csrf_field() }}
         <div class="input-group">

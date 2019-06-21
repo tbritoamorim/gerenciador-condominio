@@ -3,6 +3,7 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'admin', 'prefix' => 'adm
     Route::get('/', 'AdminController@index')->name('admin.home');
     Route::get('condominos/index', 'CondominosController@index')->name('admin.condominos');
     Route::post('condominos/index', 'CondominosController@search')->name('admin.condominos.search');
+    Route::post('condominos/create', 'CondominosController@create')->name('admin.condominos.create');
     Route::get('dependentes', 'DependentesController@index')->name('admin.dependentes');
     Route::get('visitantes', 'VisitantesController@index')->name('admin.visitantes');
     Route::get('reserva', 'ReservaController@index')->name('admin.reserva');
