@@ -47,6 +47,11 @@
                             <td> {{$condomino->telefone_fixo}}   </td>
                             <td> {{$condomino->celular}}         </td>
                             <td> {{$condomino->vaga_apto}} </td>
+                            <td>
+                                <a href="" class="actions edit">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                            </td>
                         </tr>
                 
                 @empty
