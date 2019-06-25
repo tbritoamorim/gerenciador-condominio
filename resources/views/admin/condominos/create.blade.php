@@ -7,8 +7,8 @@
 @stop
 
 @section('content')
-    <p>Adicionar/Editar Condômino</p>
-    <form action="">
+<p>Adicionar Condômino</p>
+<form class="form" method="post" action="">
         Apartamento:
         <input type="text" name="apto">
         <br>
