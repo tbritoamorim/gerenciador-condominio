@@ -4,6 +4,8 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'admin', 'prefix' => 'adm
     Route::get('condominos/index', 'CondominosController@index')->name('admin.condominos');
     Route::post('condominos/index', 'CondominosController@search')->name('admin.condominos.search');
     Route::post('condominos/create', 'CondominosController@create')->name('admin.condominos.create');
+    Route::post('condominos/edit/{id}', 'CondominosController@edit')->name('admin.condominos.edit');
+    Route::match(['put', 'patch'], 'condominos/index', 'CondominosController@update')->name('admin.condominos.update');
     Route::get('dependentes', 'DependentesController@index')->name('admin.dependentes');
     Route::post('dependentes/index', 'DependentesController@search')->name('admin.dependentes.search');
     Route::get('visitantes', 'VisitantesController@index')->name('admin.visitantes');
@@ -12,7 +14,6 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'admin', 'prefix' => 'adm
     Route::post('reserva/index', 'ReservaController@search')->name('admin.reserva.search');
 });
 Route::get('/', 'SiteController@index');
-
 Auth::routes();
 
 

@@ -52,9 +52,12 @@
                             <td> {{$condomino->celular}}         </td>
                             <td> {{$condomino->vaga_apto}} </td>
                             <td>
-                                <a href="" class="actions edit">
-                                    <span class="glyphicon glyphicon-pencil"></span>
-                                </a>
+                                    <form action="{{ action('admin\CondominosController@edit', $condomino->id) }}" method="post">
+                                        {{ csrf_field() }}
+                                        <button type="submit" class="btn btn-primary" style="float:right;">
+                                            <i class="glyphicon glyphicon-pencil"></i>
+                                        </button>
+                                    </form>
                             </td>
                         </tr>
                 
